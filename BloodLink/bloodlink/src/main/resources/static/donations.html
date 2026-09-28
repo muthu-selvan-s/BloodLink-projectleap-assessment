@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Donations - BloodLink</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            🩸 BloodLink
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="register-donor.html">
+                Register Donor
+            </a>
+
+            <a href="search-donor.html">
+                Search Donor
+            </a>
+
+            <a href="donations.html">
+                Donations
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =========================
+         DONATION FORM
+    ========================== -->
+
+    <section class="form-section">
+
+        <div class="form-container">
+
+            <h1>Record Blood Donation</h1>
+
+            <p class="form-description">
+                Record a completed blood donation
+                for a registered donor.
+            </p>
+
+
+            <form id="donationForm">
+
+                <!-- DONOR ID -->
+
+                <label for="donorId">
+                    Donor ID
+                </label>
+
+                <input
+                    type="number"
+                    id="donorId"
+                    placeholder="Enter donor ID"
+                    min="1"
+                    required
+                >
+
+
+                <!-- DONATION DATE -->
+
+                <label for="donationDate">
+                    Donation Date
+                </label>
+
+                <input
+                    type="date"
+                    id="donationDate"
+                    required
+                >
+
+
+                <!-- SUBMIT -->
+
+                <button
+                    type="submit"
+                    class="submit-btn"
+                >
+                    Record Donation
+                </button>
+
+            </form>
+
+
+            <div
+                id="donationMessage"
+                class="message">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         DONATION HISTORY
+    ========================== -->
+
+    <section class="results-section">
+
+        <h2>
+            Donor Donation History
+        </h2>
+
+        <div
+            id="donationHistory">
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <p>
+            © 2026 BloodLink |
+            Blood Donor Registry and Search System
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

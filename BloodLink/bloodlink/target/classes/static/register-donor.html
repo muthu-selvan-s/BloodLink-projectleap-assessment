@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>BloodLink - Register Donor</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            🩸 BloodLink
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="register-donor.html">
+                Register Donor
+            </a>
+
+            <a href="search-donor.html">
+                Search Donor
+            </a>
+
+            <a href="donations.html">
+                Donations
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =========================
+         REGISTER FORM
+    ========================== -->
+
+    <section class="form-section">
+
+        <div class="form-container">
+
+            <h1>
+                Register as a Blood Donor
+            </h1>
+
+            <p class="form-description">
+                Become a donor and help save lives.
+            </p>
+
+
+            <form id="donorForm">
+
+
+                <!-- NAME -->
+
+                <label for="name">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+
+                <!-- PHONE -->
+
+                <label for="phone">
+                    Phone Number
+                </label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Enter your phone number"
+                    required
+                >
+
+
+                <!-- EMAIL -->
+
+                <label for="email">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+
+                <!-- CITY -->
+
+                <label for="city">
+                    City
+                </label>
+
+                <input
+                    type="text"
+                    id="city"
+                    placeholder="Enter your city"
+                    required
+                >
+
+
+                <!-- BLOOD GROUP -->
+
+                <label for="bloodGroup">
+                    Blood Group
+                </label>
+
+                <select
+                    id="bloodGroup"
+                    required>
+
+                    <option value="">
+                        Select Blood Group
+                    </option>
+
+                </select>
+
+
+                <!-- SUBMIT -->
+
+                <button
+                    type="submit"
+                    class="submit-btn">
+
+                    Register Donor
+
+                </button>
+
+            </form>
+
+
+            <!-- MESSAGE -->
+
+            <div
+                id="registerMessage"
+                class="message">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <p>
+            © 2026 BloodLink - Blood Donor Registry and Search
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

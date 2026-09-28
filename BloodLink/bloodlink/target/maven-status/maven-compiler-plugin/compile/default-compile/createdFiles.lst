@@ -1,0 +1,7 @@
+com\blood\bloodlink\repository\BloodGroupRepository.class
+com\blood\bloodlink\BloodlinkApplication.class
+com\blood\bloodlink\entity\Donor.class
+com\blood\bloodlink\entity\DonationRecord.class
+com\blood\bloodlink\repository\DonorRepository.class
+com\blood\bloodlink\entity\BloodGroup.class
+com\blood\bloodlink\repository\DonationRecordRepository.class

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>BloodLink - Blood Donor Registry</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            🩸 BloodLink
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="register-donor.html">
+                Register Donor
+            </a>
+
+            <a href="search-donor.html">
+                Search Donor
+            </a>
+
+            <a href="donations.html">
+                Donations
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>
+                Find Blood. Save Lives.
+            </h1>
+
+            <p>
+                BloodLink helps people find available blood donors
+                quickly and efficiently.
+            </p>
+
+
+            <!-- =========================
+                 HERO BUTTONS
+            ========================== -->
+
+            <div class="hero-buttons">
+
+
+                <!-- REGISTER DONOR -->
+
+                <a href="#"
+                   class="btn register-btn"
+                   onclick="openRegisterPopup(event)">
+
+                    Register as Donor
+
+                </a>
+
+
+                <!-- FIND DONOR -->
+
+                <a href="#"
+                   class="btn secondary-btn"
+                   onclick="openSearchPopup(event)">
+
+                    Find a Donor
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FEATURES SECTION
+    ========================== -->
+
+    <section class="features">
+
+        <h2>
+            How BloodLink Helps
+        </h2>
+
+
+        <div class="feature-container">
+
+
+            <!-- FEATURE 1 -->
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    🩸
+                </div>
+
+                <h3>
+                    Register Donors
+                </h3>
+
+                <p>
+                    Donors can register their blood group,
+                    city and contact details.
+                </p>
+
+            </div>
+
+
+            <!-- FEATURE 2 -->
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    🔍
+                </div>
+
+                <h3>
+                    Search Donors
+                </h3>
+
+                <p>
+                    Search for available donors based on
+                    blood group and city.
+                </p>
+
+            </div>
+
+
+            <!-- FEATURE 3 -->
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    📊
+                </div>
+
+                <h3>
+                    Track Donations
+                </h3>
+
+                <p>
+                    Record blood donations and maintain
+                    donation history.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         REGISTER DONOR POPUP
+    ====================================================== -->
+
+    <div id="registerPopup"
+         class="register-popup">
+
+
+        <div class="popup-box">
+
+
+            <!-- CLOSE -->
+
+            <button class="popup-close"
+                    onclick="closeRegisterPopup()">
+
+                ×
+
+            </button>
+
+
+            <!-- ICON -->
+
+            <div class="popup-icon">
+
+                🩸
+
+            </div>
+
+
+            <!-- TITLE -->
+
+            <h2>
+                Become a Blood Donor
+            </h2>
+
+
+            <!-- MESSAGE -->
+
+            <p>
+                Your donation can help save someone's life.
+                Are you ready to become a donor?
+            </p>
+
+
+            <!-- BUTTONS -->
+
+            <div class="popup-buttons">
+
+
+                <button class="popup-cancel"
+                        onclick="closeRegisterPopup()">
+
+                    Maybe Later
+
+                </button>
+
+
+                <a href="register-donor.html"
+                   class="popup-register">
+
+                    Continue
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         FIND DONOR POPUP
+    ====================================================== -->
+
+    <div id="searchPopup"
+         class="register-popup">
+
+
+        <div class="popup-box">
+
+
+            <!-- CLOSE -->
+
+            <button class="popup-close"
+                    onclick="closeSearchPopup()">
+
+                ×
+
+            </button>
+
+
+            <!-- ICON -->
+
+            <div class="popup-icon">
+
+                🔍
+
+            </div>
+
+
+            <!-- TITLE -->
+
+            <h2>
+                Find a Blood Donor
+            </h2>
+
+
+            <!-- MESSAGE -->
+
+            <p>
+                Looking for a blood donor?
+                Search for available donors by blood group
+                and city.
+            </p>
+
+
+            <!-- BUTTONS -->
+
+            <div class="popup-buttons">
+
+
+                <button class="popup-cancel"
+                        onclick="closeSearchPopup()">
+
+                    Maybe Later
+
+                </button>
+
+
+                <a href="search-donor.html"
+                   class="popup-register">
+
+                    Find Donor
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <p>
+            © 2026 BloodLink - Blood Donor Registry and Search
+        </p>
+
+    </footer>
+
+
+    <!-- =====================================================
+         POPUP JAVASCRIPT
+    ====================================================== -->
+
+    <script>
+
+
+        /* ==========================================
+           REGISTER DONOR POPUP
+        ========================================== */
+
+        function openRegisterPopup(event) {
+
+            event.preventDefault();
+
+            document
+                .getElementById("registerPopup")
+                .classList.add("show");
+
+        }
+
+
+        function closeRegisterPopup() {
+
+            document
+                .getElementById("registerPopup")
+                .classList.remove("show");
+
+        }
+
+
+        /* ==========================================
+           FIND DONOR POPUP
+        ========================================== */
+
+        function openSearchPopup(event) {
+
+            event.preventDefault();
+
+            document
+                .getElementById("searchPopup")
+                .classList.add("show");
+
+        }
+
+
+        function closeSearchPopup() {
+
+            document
+                .getElementById("searchPopup")
+                .classList.remove("show");
+
+        }
+
+
+        /* ==========================================
+           CLOSE REGISTER POPUP
+           WHEN CLICKING OUTSIDE
+        ========================================== */
+
+        document
+            .getElementById("registerPopup")
+            .addEventListener("click", function(event) {
+
+                if (event.target === this) {
+
+                    closeRegisterPopup();
+
+                }
+
+            });
+
+
+        /* ==========================================
+           CLOSE SEARCH POPUP
+           WHEN CLICKING OUTSIDE
+        ========================================== */
+
+        document
+            .getElementById("searchPopup")
+            .addEventListener("click", function(event) {
+
+                if (event.target === this) {
+
+                    closeSearchPopup();
+
+                }
+
+            });
+
+
+    </script>
+
+
+</body>
+
+</html>

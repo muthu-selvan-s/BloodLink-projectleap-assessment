@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>BloodLink - Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            🩸 BloodLink
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="register-donor.html">
+                Register Donor
+            </a>
+
+            <a href="search-donor.html">
+                Search Donor
+            </a>
+
+            <a href="donations.html">
+                Donations
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =====================================================
+         DASHBOARD MAIN
+    ====================================================== -->
+
+    <main class="dashboard-page">
+
+
+        <!-- =================================================
+             DASHBOARD HEADER
+        ================================================== -->
+
+        <section class="dashboard-header">
+
+            <div>
+
+                <span class="dashboard-label">
+                    BLOODLINK OVERVIEW
+                </span>
+
+                <h1>
+                    Blood Donor Dashboard
+                </h1>
+
+                <p>
+                    Monitor donor availability, blood groups,
+                    and locations in one place.
+                </p>
+
+            </div>
+
+            <div class="dashboard-header-icon">
+                🩸
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SUMMARY CARDS
+        ================================================== -->
+
+        <section class="summary-grid">
+
+
+            <!-- TOTAL DONORS -->
+
+            <div class="summary-card total-card">
+
+                <div class="summary-icon">
+                    👥
+                </div>
+
+                <div class="summary-content">
+
+                    <span>
+                        Total Donors
+                    </span>
+
+                    <h2 id="totalDonors">
+                        0
+                    </h2>
+
+                    <small>
+                        Registered donors
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <!-- AVAILABLE DONORS -->
+
+            <div class="summary-card available-card">
+
+                <div class="summary-icon">
+                    ❤️
+                </div>
+
+                <div class="summary-content">
+
+                    <span>
+                        Available Donors
+                    </span>
+
+                    <h2 id="availableDonors">
+                        0
+                    </h2>
+
+                    <small>
+                        Currently available
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <!-- UNAVAILABLE DONORS -->
+
+            <div class="summary-card unavailable-card">
+
+                <div class="summary-icon">
+                    ⏳
+                </div>
+
+                <div class="summary-content">
+
+                    <span>
+                        Unavailable Donors
+                    </span>
+
+                    <h2 id="unavailableDonors">
+                        0
+                    </h2>
+
+                    <small>
+                        Currently unavailable
+                    </small>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- =================================================
+             BLOOD GROUP SECTION
+        ================================================== -->
+
+        <section class="dashboard-section">
+
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        BLOOD AVAILABILITY
+                    </span>
+
+                    <h2>
+                        Available Donors by Blood Group
+                    </h2>
+
+                </div>
+
+                <div class="section-icon">
+                    🩸
+                </div>
+
+            </div>
+
+
+            <div
+                id="bloodGroups"
+                class="blood-group-grid">
+
+                <!-- JavaScript will load blood groups here -->
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             CITY SECTION
+        ================================================== -->
+
+        <section class="dashboard-section">
+
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        LOCATION
+                    </span>
+
+                    <h2>
+                        Available Donors by City
+                    </h2>
+
+                </div>
+
+                <div class="section-icon">
+                    📍
+                </div>
+
+            </div>
+
+
+            <div
+                id="cities"
+                class="city-grid">
+
+                <!-- JavaScript will load cities here -->
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             QUICK ACTIONS
+        ================================================== -->
+
+        <section class="quick-actions">
+
+            <h2>
+                Quick Actions
+            </h2>
+
+            <div class="action-grid">
+
+
+                <a href="register-donor.html"
+                   class="action-card">
+
+                    <div class="action-icon">
+                        🩸
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Register Donor
+                        </h3>
+
+                        <p>
+                            Add a new blood donor
+                        </p>
+
+                    </div>
+
+                    <span class="action-arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+                <a href="search-donor.html"
+                   class="action-card">
+
+                    <div class="action-icon">
+                        🔍
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Search Donor
+                        </h3>
+
+                        <p>
+                            Find available blood donors
+                        </p>
+
+                    </div>
+
+                    <span class="action-arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+                <a href="donations.html"
+                   class="action-card">
+
+                    <div class="action-icon">
+                        📋
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Donation Records
+                        </h3>
+
+                        <p>
+                            View and record donations
+                        </p>
+
+                    </div>
+
+                    <span class="action-arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer>
+
+        <p>
+            © 2026 BloodLink - Blood Donor Registry and Search
+        </p>
+
+    </footer>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
